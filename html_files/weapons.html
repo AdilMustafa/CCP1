@@ -1,0 +1,122 @@
+  <!DOCTYPE html>
+
+<html lang="en"> <!-- This sets the language to English-->
+<head>
+     <title>Weapons Webpage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="../css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!-- This is how I linked the "Poirer One" font to this webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css_files/bootstrap.min.css">
+    
+    
+    <script src="../js_files/text_adjustment.js"></script>
+    <script src="../js_files/p5_libraries/p5.min.js"></script>
+    <script src="../js_files/p5_libraries/p5.play.js"></script>
+    <script src="../js_files/p5_libraries/p5.sound.min.js"></script>
+    <script src="../js_files/p5_libraries/scenemanager.js"></script> 
+  
+</head>
+
+<body style="background:URL('../images/homepage_images/camo.png');">
+
+<div id="container4"> <!-- this is the container, its purpose is to hold each section of the website together -->
+     
+     
+            <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+           
+           
+           
+           <div id="banner"> Weapons </div>
+       
+       </div>
+    
+     <div id="navigation"> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+            <li><a href="weapons.html">Weapons</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="read_more/game.html">Game</a></li>
+            <li> <select onchange="textAdjustment(this);" id="select">
+                       <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list.
+        -->
+                  <option>Font Size</option>
+                  <option value="5px">5px</option>
+                  <option value="10px">10px</option>
+                  <option value="15px">15px</option>
+                  <option value="20px">20px</option>
+                  <option value="25px">25px</option>
+                  <option value="30px">30px</option>
+                  <option value="35px">35px</option>
+                  <option value="40px">40px</option>
+                  <option value="45px">45px</option>
+                  <option value="50px">50px</option>
+            </select></li>
+         </ul>
+    </div>
+     
+     
+     
+     
+    <div id="maincontent3"> <!-- this is the main content, its purpose is to hold the middle section of the website   -->
+  
+
+        <div class="boxes">
+            <a href="read_more/rm_wep1.html">
+                <img src= "../images/homepage_images/wep1.png"
+                alt="This is an image of the first weapon title screen"
+                style="background:#000000">
+            </a>  
+        </div>
+        
+        
+          <div class="boxes">
+            <a href="read_more/rm_wep2.html">
+                <img src= "../images/homepage_images/wep2.png"
+                alt="This is an image of the first weapon title screen"
+                style="background:#000000">
+            </a>  
+        </div>
+        
+        
+          <div class="boxes">
+            <a href="read_more/rm_wep3.html">
+                <img src= "../images/homepage_images/wep3.png" 
+                alt="This is an image of the first weapon title screen"
+                style="background:#000000">
+            </a>  
+        </div>
+        
+          <div class="boxes">
+            <a href="read_more/rm_wep4.html">
+                <img src= "../images/homepage_images/wep4.png"
+                alt="This is an image of the first weapon title screen"
+                style="background:#000000">
+            </a>  
+        </div>
+        
+          <div class="boxes">
+            <a href="read_more/rm_wep5.html">
+                <img src= "../images/homepage_images/wep5.png" 
+                alt="This is an image of the first weapon title screen"
+                style="background:#000000">
+            </a>  
+        </div>
+        
+        
+        
+        
+    
+    </div>
+
+    
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Weapons Webpage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!-- This is how I linked the "Poirer One" font to this webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css_files/bootstrap.min.css">
+    
+    <script src="../../js_files/text_adjustment.js"></script>
+    <script src="../../js_files/p5_libraries/p5.min.js"></script>
+    <script src="../../js_files/p5_libraries/p5.play.js"></script>
+    <script src="../../js_files/p5_libraries/p5.sound.min.js"></script>
+    <script src="../../js_files/p5_libraries/scenemanager.js"></script>
+    <script src="../../js_files/p5_libraries/p5.dom.js"></script>
+  
+  
+</head>
+
+<style>
+    p{font-family: 'Press Start 2P', cursive;line-height: 150%;}
+    
+</style>
+
+
+<body style="background:URL('../../images/homepage_images/camo.png');">
+
+<div id="container3">
+     
+     
+         <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+           
+           
+           <div id="banner"> Weapons </div>
+       
+       </div>
+    
+     <div id="navigation"> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+        <li><a href="../../index.html">Home</a></li>
+            <li><a href="../weapons.html">Weapons</a></li>
+            <li><a href="../vehicles.html">Vehicles</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li> <select onchange="textAdjustment(this);" id="select">
+        <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list.
+        -->
+                  <option>Font Size</option>
+                  <option value="5px">5px</option>
+                  <option value="10px">10px</option>
+                  <option value="15px">15px</option>
+                  <option value="20px">20px</option>
+                  <option value="25px">25px</option>
+                  <option value="30px">30px</option>
+                  <option value="35px">35px</option>
+                  <option value="40px">40px</option>
+                  <option value="45px">45px</option>
+                  <option value="50px">50px</option>
+            </select></li>
+         </ul>
+    </div>
+     
+     
+     
+     
+
+           
+           
+        <div id="maincontent">
+           
+           
+        <div id="wep1">
+           
+           <script src="../../js_files/sketches/weapon1_sketch.js"></script> 
+            
+                 
+        </div>
+            <br><br><input type="text" style="margin-left:365px;" name="fname" placeholder="   input for mobile devices">
+       
+      <div id="Toptextbox">
+        
+        <p>
+        Weapon Description - "The Walking Stick"
+            <br>
+            <br>
+            The Walking stick is for all the sneaky old people who want to keep separated from others. When people see you with your walking stick 
+            they will think you’re an easy target and will try to attack you. It’s simple, if you see a threat you press the trigger and the rest is history. The walking stick will cost 20 chickens or 10 chickens and 2 buckets of water.
+
+        </p>    
+      </div>
+       
+         
+       
+
+    </div>
+
+       
+
+
+    
+</div>
+
+
+</body>
+</html>

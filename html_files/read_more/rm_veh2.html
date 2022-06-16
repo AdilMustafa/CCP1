@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Weapons Webpage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!-- This is how I linked the "Poirer One" font to this webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css_files/bootstrap.min.css">
+    
+    <script src="../../js_files/text_adjustment.js"></script>
+    <script src="../../js_files/p5_libraries/p5.min.js"></script>
+    <script src="../../js_files/p5_libraries/p5.play.js"></script>
+    <script src="../../js_files/p5_libraries/p5.sound.min.js"></script>
+    <script src="../../js_files/p5_libraries/scenemanager.js"></script>
+    <script src="../../js_files/p5_libraries/p5.dom.js"></script>
+  
+  
+</head>
+
+<style>
+    p{font-family: 'Press Start 2P', cursive;line-height: 150%;}
+    
+</style>
+
+
+<body style="background:URL('../../images/homepage_images/background2.jpg');">
+
+<div id="container3">
+     
+     
+         <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+           
+           
+           <div id="banner"> Vehicle </div>
+       
+       </div>
+    
+     <div id="navigation"> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+        <li><a href="../../index.html">Home</a></li>
+            <li><a href="../weapons.html">Weapons</a></li>
+            <li><a href="../vehicles.html">Vehicles</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li> <select onchange="textAdjustment(this);" id="select">
+        <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list.
+        -->
+                  <option>Font Size</option>
+                  <option value="5px">5px</option>
+                  <option value="10px">10px</option>
+                  <option value="15px">15px</option>
+                  <option value="20px">20px</option>
+                  <option value="25px">25px</option>
+                  <option value="30px">30px</option>
+                  <option value="35px">35px</option>
+                  <option value="40px">40px</option>
+                  <option value="45px">45px</option>
+                  <option value="50px">50px</option>
+            </select></li>
+         </ul>
+    </div>
+     
+     
+     
+     
+
+           
+           
+        <div id="maincontent">
+           
+           
+        <div id="veh2">
+           
+           <script src="../../js_files/sketches/vehicle2_sketch.js"></script> 
+                 
+        </div>
+            
+        <br><br><input type="text" style="margin-left:365px;" name="fname" placeholder="   input for mobile devices">
+       
+      <div id="Toptextbox">
+        
+        <p id="TA">
+            Vehicle Description - "The Hamster Ball"
+            <br>
+            <br>
+            The Hamster ball is created by a someone who well took advantage of the world going insane. He was able to create something so dumb 
+            and unrealistic that can only exist in a game. he created a bulletproof hamster ball that shoots out red electricity that can apparently 
+            nuke a place? It doesn’t make sense but the person has gotten bored of this invention and has decided to sell it for a farm (if you own a farm and is thinking about purchasing this invention do be aware that if you try to kill him after the purchase the vehicle can only work if he’s alive).
+
+        </p>    
+      </div>
+       
+ 
+
+    </div>
+
+       
+
+
+    
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Weapons Webpage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!-- This is how I linked the "Poirer One" font to this webpage-->
+    
+    
+    
+    <script src="../../js_files/text_adjustment.js"></script>
+    <script src="../../js_files/p5_libraries/p5.min.js"></script>
+    <script src="../../js_files/p5_libraries/p5.play.js"></script>
+    <script src="../../js_files/p5_libraries/p5.sound.min.js"></script>
+    <script src="../../js_files/p5_libraries/scenemanager.js"></script> 
+  
+</head>
+
+
+
+<body>
+
+<div id="container3">
+     
+     
+         <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+           
+       
+            <div id="logo">
+           <a href="../../index.html"> <!-- When the user clicks on the logo they will be redirected back to the homepage/index -->
+           LOGO (TEMP)
+           </a>
+           </div>
+           
+           
+           <div id="banner"> Weapons </div>
+       
+       </div>
+    
+     <div id="navigation"> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+        <li><a href="../../index.html">Home</a></li>
+            <li><a href="../game_world.html">Game World</a></li>
+            <li><a href="../weapons.html">Weapons</a></li>
+            <li><a href="../vehicles.html">Vehicles</a></li>
+            <li><a href="../game.html">Game</a></li>
+            <li> <select onchange="textAdjustment(this);" id="select">
+                       <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list. 
+         REFERENCE:[1] W3Schools.com, ' Style fontSize Property', 2020. [Online]. 
+         Available:  https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_fontsize2 
+         [Accessed: 06, jan, 2020].)
+        -->
+                  <option>Font Size</option>
+                  <option value="5px">5px</option>
+                  <option value="10px">10px</option>
+                  <option value="15px">15px</option>
+                  <option value="20px">20px</option>
+                  <option value="25px">25px</option>
+                  <option value="30px">30px</option>
+                  <option value="35px">35px</option>
+                  <option value="40px">40px</option>
+                  <option value="45px">45px</option>
+                  <option value="50px">50px</option>
+            </select></li>
+         </ul>
+    </div>
+     
+     
+     
+     
+
+           
+           
+        <div id="maincontent">
+           
+           
+        <div id="wep1">
+           
+           <script src="../../js_files/sketches/weapon1_sketch.js"></script> 
+                 
+        </div>
+       
+      <div id="Toptextbox">
+        
+        <p>
+       
+        </p>    
+      </div>
+       
+          <div id=Return>
+                
+            
+            
+            
+                <a href="../weapons.html">
+                     <input type="submit" value="Return to Original Page" class="btn">
+                </a>
+            
+            
+            
+            
+        </div>
+       
+
+    </div>
+
+       
+
+       
+ <footer>
+
+    
+
+    </footer>
+    
+
+    
+</div>
+
+
+</body>
+</html>

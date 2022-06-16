@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- This sets the language to English-->
+<head>
+    
+    <title>Homepage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link rel="stylesheet" type="text/css" href="css_files/bootstrap.min.css"> <!-- This links the bootstrap css file to this webpage-->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!--This is how I linked the "Poirer One" font to this webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script src="js_files/jquery_library.js"></script> <!-- This is how I linked the jQuery javascript library to this webpage (it was used to help make the carousel/image slider)-->
+    
+    
+    <script src="js_files/text_adjustment.js"></script> 
+
+    <!-- This is how I linked the "text_adjustment" script to this webpage 
+    (it is used to allow the user to increase/decrease the font size for the webpage-->
+   
+</head>
+<style>
+    p{font-family: 'Press Start 2P', cursive;line-height: 150%;}
+    
+</style>
+<body style="background:URL('images/homepage_images/background.jpg');">  <!-- This sets the webpage background to be a light grey -->
+
+ <!-- This is the container, its purpose is to hold each section of the website together -->
+     
+     
+        <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+
+
+       <div id="banner">
+          Homepage
+       </div>
+
+   </div>
+    
+     <navigation> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <!-- When the user clicks on the "Home" text they will be directed to the homepage/index -->
+            
+            <li><a href="html_files/weapons.html">Weapons</a></li>
+            <!-- When the user clicks on the "Weapons" text they will be directed to the weapons webpage -->
+            
+            <li><a href="html_files/vehicles.html">Vehicles</a></li>
+            <!-- When the user clicks on the "Vehicles" text they will be directed to the vehicles webpage -->
+            
+            <li><a href="html_files/read_more/game.html">Game</a></li>
+            <!-- When the user clicks on the "Game" text they will be directed to the game webpage -->
+            
+            <li> <select onchange="textAdjustment(this);" id="select">
+        <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list.)
+        -->
+                  <option>Font Size</option> 
+                  <option value="5px">5px</option> <!-- when the user selects this option the text will become 5px -->
+                  <option value="10px">10px</option> <!-- when the user selects this option the text will become 10px -->
+                  <option value="15px">15px</option> <!-- when the user selects this option the text will become 15px -->
+                  <option value="20px">20px</option> <!-- when the user selects this option the text will become 20px -->
+                  <option value="25px">25px</option> <!-- when the user selects this option the text will become 25px -->
+                  <option value="30px">30px</option> <!-- when the user selects this option the text will become 30px -->
+                  <option value="35px">35px</option> <!-- when the user selects this option the text will become 35px -->
+                  <option value="40px">40px</option> <!-- when the user selects this option the text will become 40px -->
+                  <option value="45px">45px</option> <!-- when the user selects this option the text will become 45px -->
+                  <option value="50px">50px</option> <!-- when the user selects this option the text will become 50px -->
+            </select></li> 
+         </ul>
+    </navigation>
+     <div id="container">
+  
+        
+        <div id="about">
+        <p style="font-size: 25px; margin-top:3px;">GAME WORLD</p>
+        </div>
+        
+        <div id="aboutBox">
+            
+            <p id="TA">
+                After a decade of constant isolation, the world gradually became sick of each other. 
+                Isolating with the family became "every man for themselves". In order to survive this post-apocalyptic world
+                you need to purchase military-grade weaponry. The purpose of this website is to sell our customers in this
+                post-apocalyptic world with our arsenal with the currency we view to be valuable. money isn’t useful, but what is 
+                useful food. If you own a farm you are a millionaire in our eyes. All of our items will be sold 
+                for chickens or water (water being the more valuable currency) however if you have something else you can 
+                trade please let us know before your purchase. Our delivery service is only for people within the UK as shipping doesn’t exist
+                and we are not going to fly over to you unless you pay a premium. When we deliver our goods don’t try to use our weapons against us
+                as they can’t function once we are dead and they don’t do any damage to us anyway so don’t bother. Finally, 
+                we are currently looking for employees who are hardworking and the best way to confirm your place for working with us
+                you can send footage of you dealing with our "competitors".
+
+            </p>
+            
+        </div>
+        
+        
+        <div id="wepBox">
+            <a href="html_files/weapons.html">
+                <img src= "images/homepage_images/wepPage.png" 
+                alt="This is an image saying 'weapon page click here'">
+            </a>
+        </div>
+        
+         <div id="vehBox">
+            <a href="html_files/vehicles.html">
+                <img src= "images/homepage_images/vehPage.png" 
+                alt="This is an image saying 'vehicle page click here'">
+            </a>
+        </div>
+        
+         <div id="gameBox">
+            <a href="html_files/read_more/game.html">
+                <img src= "images/homepage_images/gamePage.png" 
+                alt="This is an image saying 'game page click here'">
+            </a>
+        </div>
+        
+        
+        
+
+    </div>
+
+
+    
+    
+
+
+</body>
+</html>

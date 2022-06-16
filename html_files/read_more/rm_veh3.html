@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Weapons Webpage</title> <!--This creates the title of the webpage (when opened in a web browser this title will appear on the tab) -->
+    <meta name= "author" content="Muhammed Adil Mustafa"> 
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css_files/style.css"> <!-- This is how you link an external style sheet to a html page -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!-- This is how I linked the "Poirer One" font to this webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css_files/bootstrap.min.css">
+    
+    <script src="../../js_files/text_adjustment.js"></script>
+    <script src="../../js_files/p5_libraries/p5.min.js"></script>
+    <script src="../../js_files/p5_libraries/p5.play.js"></script>
+    <script src="../../js_files/p5_libraries/p5.sound.min.js"></script>
+    <script src="../../js_files/p5_libraries/scenemanager.js"></script>
+    <script src="../../js_files/p5_libraries/p5.dom.js"></script>
+  
+  
+</head>
+
+<style>
+    p{font-family: 'Press Start 2P', cursive;line-height: 150%;}
+    
+</style>
+
+
+<body style="background:URL('../../images/homepage_images/background2.jpg');">
+
+<div id="container3">
+     
+     
+         <div id="header"> <!-- This is the header, its purpose is to hold the logo and banner for the webpage -->
+           
+           
+           <div id="banner"> Vehicle </div>
+       
+       </div>
+    
+     <div id="navigation"> <!-- this is the navigation tag, the purpose of this is to hold all the elements of the navigation bar together -->
+        <ul>
+        <li><a href="../../index.html">Home</a></li>
+            <li><a href="../weapons.html">Weapons</a></li>
+            <li><a href="../vehicles.html">Vehicles</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li> <select onchange="textAdjustment(this);" id="select">
+        <!-- 
+         The purpose of this is to call the "textAdustment()" function created from the "text_adjustment"
+         script. The function essentially converts the sizes of all the text inside the HTML <p> tags
+         depending on what font size the user choses from the dropdown list.
+        -->
+                  <option>Font Size</option>
+                  <option value="5px">5px</option>
+                  <option value="10px">10px</option>
+                  <option value="15px">15px</option>
+                  <option value="20px">20px</option>
+                  <option value="25px">25px</option>
+                  <option value="30px">30px</option>
+                  <option value="35px">35px</option>
+                  <option value="40px">40px</option>
+                  <option value="45px">45px</option>
+                  <option value="50px">50px</option>
+            </select></li>
+         </ul>
+    </div>
+     
+     
+     
+     
+
+           
+           
+        <div id="maincontent">
+           
+           
+        <div id="veh3">
+           
+           <script src="../../js_files/sketches/vehicle3_sketch.js"></script> 
+                 
+        </div>
+            
+            <br><br><input type="text" style="margin-left:365px;" name="fname" placeholder="   input for mobile devices">
+       
+      <div id="Toptextbox">
+        
+        <p>
+            Vehicle Description - "The Bike"
+            <br>
+            <br>
+            Aah the bike, the generic one out of the vehicles. What can you say about it that hasn’t already been said?
+            It being generic will provide you with a thrilling and familiar experience every time you ride it. It is so 
+            good it will make you appreciate other uninspiring vehicles we provide like the scooter, why? this vehicle is unnecessarily 
+            loud and will lead into people trying to kill you. Just get the scooter its cheaper and better. This vehicle will cost you 50 chickens.
+
+        </p>    
+      </div>
+       
+
+       
+
+    </div>
+
+       
+
+
+    
+</div>
+
+
+</body>
+</html>
